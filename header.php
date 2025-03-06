@@ -10,9 +10,11 @@
 <body>
     
     <div style="background-color: white; padding: 30px;" class="container" >
-    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: column;">
+    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
         <h1 style="color: black;">This is header</h1>
-        <button class="btn btn-primary" href="signIn_signUp">Sample Button</button>
+        <a href="authentication/Login" class="btn btn-primary">Login / Register</a>
+        <a href="index" class="btn btn-primary">Home</a>
     </header>
     </div>
 
+    
