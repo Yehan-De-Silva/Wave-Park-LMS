@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WavePark</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     
-
-    <header>
-        <h1>This is header</h1>
-        <button class="btn btn-primary">Sample Button</button>
+    <div style="background-color: white; padding: 30px;" class="container" >
+    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: column;">
+        <h1 style="color: black;">This is header</h1>
+        <button class="btn btn-primary" href="signIn_signUp">Sample Button</button>
     </header>
-
+    </div>
 
