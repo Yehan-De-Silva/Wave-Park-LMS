@@ -27,6 +27,10 @@ include '../header.php';
                 &nbsp;
                 <button type="submit" name="login" class="btn btn-custom w-100">Sign In</button>
             </form>
+            &nbsp;
+            <div class="extra">
+            <h4>Don't have an account? <a href="#" id="signUpLink">SignUp</a>
+            </div>
         </div>
 
         <!-- Sign Up Form -->
@@ -47,6 +51,10 @@ include '../header.php';
                 &nbsp;
                 <button type="submit" name="register" class="btn btn-custom w-100">Sign Up</button>
             </form>
+            &nbsp;
+            <div class="extra">
+            <h4>Already have an account? <a href="#" id="signInLink">SignIn</a>
+            </div>
         </div>
     </div>
 </div>
@@ -67,4 +75,20 @@ include '../header.php';
         this.classList.add('active');
         document.getElementById('signInToggle').classList.remove('active');
     });
+
+    document.getElementById('signUpLink').addEventListener('click', function() {
+        document.getElementById('signUpForm').classList.add('active');
+        document.getElementById('signInForm').classList.remove('active');
+        document.getElementById('signUpToggle').classList.add('active');
+        document.getElementById('signInToggle').classList.remove('active');
+    });
+
+    document.getElementById('signInLink').addEventListener('click', function() {
+        document.getElementById('signInForm').classList.add('active');
+        document.getElementById('signUpForm').classList.remove('active');
+        document.getElementById('signInToggle').classList.add('active');
+        document.getElementById('signUpToggle').classList.remove('active');
+    });
+
+    
 </script>
