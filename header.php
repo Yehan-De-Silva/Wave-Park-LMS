@@ -10,7 +10,7 @@
 <body>
     
     <div style="background-color: white; padding: 30px;" class="container" >
-    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row;">
+    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row; flex-direction: row; row-gap: 10px;">
         <h1 style="color: black;">This is header</h1>
         <a href="authentication/Login" class="btn btn-primary">Login / Register</a>
         <a href="home" class="btn btn-primary">Home</a>
