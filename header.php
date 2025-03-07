@@ -13,7 +13,7 @@
     <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
         <h1 style="color: black;">This is header</h1>
         <a href="authentication/Login" class="btn btn-primary">Login / Register</a>
-        <a href="Lecturer/Lec_dashboard" class="btn btn-primary">Instructor Dashboard</a>
+        <a href="Lecturer/overview" class="btn btn-primary">Instructor Dashboard</a>
     </header>
     </div>
 
