@@ -14,6 +14,7 @@
         <h1 style="color: black;">This is header</h1>
         <a href="authentication/Login" class="btn btn-primary">Login / Register</a>
         <a href="index" class="btn btn-primary">Home</a>
+        <a href="Lecturer/Lec_dashboard" class="btn btn-primary">Instructor Dashboard</a>
     </header>
     </div>
 
