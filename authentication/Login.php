@@ -2,6 +2,7 @@
 
 session_start();
 include '../header.php'; 
+include '../db_connection.php';
 
 
 ?>
@@ -18,11 +19,11 @@ include '../header.php';
             <form method="post" action="auth.php">
                 <div class="mb-4">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" required>
+                    <input type="email" name="email" class="form-control" required>
                 </div>
                 <div class="mb-4">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" required>
+                    <input type="password" name="password" class="form-control" required>
                 </div>
                 &nbsp;
                 <button type="submit" name="login" class="btn btn-custom w-100">Sign In</button>
@@ -37,16 +38,20 @@ include '../header.php';
         <div class="form-container" id="signUpForm">
             <form method="post" action="auth.php">
                 <div class="mb-3">
-                    <label class="form-label">Name</label>
-                    <input type="text" class="form-control" required>
+                    <label class="form-label">First Name</label>
+                    <input type="text" name="first_name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" name="last_name" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" required>
+                    <input type="email" name="email" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" required>
+                    <input type="password" name="password" class="form-control" required>
                 </div>
                 &nbsp;
                 <button type="submit" name="register" class="btn btn-custom w-100">Sign Up</button>
