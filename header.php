@@ -9,6 +9,7 @@
 </head>
 <body>
     
+<<<<<<< HEAD
     <div style="background-color: white;" class="px-5 py-2" >
         <header style="display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
             <div class="row w-100">
@@ -27,6 +28,14 @@
                 </div>
             </div>
         </header>
+=======
+    <div style="background-color: white; padding: 30px;" class="container" >
+    <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
+        <h1 style="color: black;">This is header</h1>
+        <a href="authentication/Login" class="btn btn-primary">Login / Register</a>
+        <a href="Lecturer/overview" class="btn btn-primary">Instructor Dashboard</a>
+    </header>
+>>>>>>> af39c53763d08efa883b823a7c125640bda6b4ea
     </div>
 </html>
     
