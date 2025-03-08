@@ -43,8 +43,4 @@ function registerUser($full_name, $email, $password) {
         echo "<script>alert('Incorrect Username or Password...Try Again...');</script>";
     }
 }
-
-
-
-
 ?>

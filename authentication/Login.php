@@ -3,7 +3,6 @@
 session_start();
 include '../header.php'; 
 
-
 ?>
 
 <div class="container">
@@ -90,5 +89,4 @@ include '../header.php';
         document.getElementById('signUpToggle').classList.remove('active');
     });
 
-    
 </script>
