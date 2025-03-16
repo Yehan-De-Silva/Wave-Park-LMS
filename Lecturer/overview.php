@@ -1,6 +1,16 @@
 <?php
 session_start();
 include '../db_connection.php';
+
+// Fetch the count of assigned courses for the logged-in teacher
+$teacher_id = $_SESSION['user_id']; // Assuming teacher_id is stored in session
+$query = "SELECT COUNT(*) AS course_count FROM course WHERE teacher_id = ?";
+$stmt = $conn->prepare($query);
+$stmt->bindValue(1, $teacher_id, PDO::PARAM_INT);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$course_count = $row['course_count'];
+$stmt = null;
 ?>
 
 <!DOCTYPE html>
@@ -39,35 +49,29 @@ include '../db_connection.php';
 <div class="row mt-4 p-4">
     <div class="col-md-4 col-sm-12 mb-4">
         <div class="card stat-card">
+        <div class="title">Assigned Courses</div>
             <div class="icon-number-row">
-                <div class="icon">
-                    <i class="bi bi-book"></i>
-                </div>
-                <div class="stat-number">5</div>
+                <div class="stat-number"><?php echo htmlspecialchars($course_count); ?></div>
             </div>
-            <div class="title">Total Assigned Courses</div>
+            
         </div>
     </div>
     <div class="col-md-4 col-sm-12 mb-4">
         <div class="card stat-card">
+        <div class="title">Total Students</div>
             <div class="icon-number-row">
-                <div class="icon">
-                    <i class="bi bi-person-arms-up"></i>
-                </div>
                 <div class="stat-number">12</div>
             </div>
-            <div class="title">Total Students</div>
+           
         </div>
     </div>
     <div class="col-md-4 col-sm-12 mb-4">
         <div class="card stat-card">
+        <div class="title">Total Students</div>
             <div class="icon-number-row">
-                <div class="icon">
-                    <i class="bi bi-person-arms-up"></i>
-                </div>
                 <div class="stat-number">12</div>
             </div>
-            <div class="title">Total Students</div>
+           
         </div>
     </div>
 </div>

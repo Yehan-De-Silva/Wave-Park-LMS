@@ -39,7 +39,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Main Content Area with Rounded Container -->
     <div class="main-content p-4">
+        
         <div class="content-box p-4 shadow-sm rounded-4 bg-white">
+
+        <div class="courses">
             <center><h1 class="fw-bold mb-5">Assigned Courses</h1></center>
             
             <?php if (count($result) > 0): ?>
@@ -60,9 +63,91 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <p class="text-center mt-5">No Courses Assigned.</p>
             <?php endif; ?>
         </div>
+
+
+<!-- Add New Course Section -->
+<div class="add-course mt-5">
+    <center><h1 class="fw-bold mb-5">Add New Course</h1></center>
+    <div class="card shadow-3 p-5 mx-auto" style="border-radius: 10px; max-width: 80%;">
+        <form id="add-course-form">
+            <div class="mb-3">
+                <label for="course-name" class="form-label">Course Name</label>
+                <input type="text" class="form-control" id="course-name" name="course_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="course-description" class="form-label">Description</label>
+                <textarea class="form-control" id="course-description" name="description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="course-price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="course-price" name="price" required>
+            </div>
+            <div class="mb-3">
+                <label for="lessons" class="form-label">Lessons</label>
+                <div id="lessons-container">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="lessons[]" placeholder="Lesson Name" required>
+                        <button type="button" class="btn btn-outline-secondary add-lesson-btn">Add Lesson</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="assignments" class="form-label">Assignments</label>
+                <div id="assignments-container">
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="assignments[]" placeholder="Assignment Name" required>
+                        <button type="button" class="btn btn-outline-secondary add-assignment-btn">Add Assignment</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <center><button type="submit" class="btn btn-primary">Submit</button></center>
+        </form>
+    </div>
+</div>
+
+
+        </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Add Lesson Field
+    document.querySelector('.add-lesson-btn').addEventListener('click', function() {
+        const container = document.getElementById('lessons-container');
+        const newField = document.createElement('div');
+        newField.classList.add('input-group', 'mb-2');
+        newField.innerHTML = `
+            <input type="text" class="form-control" name="lessons[]" placeholder="Lesson Name" required>
+            <button type="button" class="btn btn-outline-danger remove-lesson-btn">Remove</button>
+        `;
+        container.appendChild(newField);
+
+        // Add event listener to remove button
+        newField.querySelector('.remove-lesson-btn').addEventListener('click', function() {
+            container.removeChild(newField);
+        });
+    });
+
+    // Add Assignment Field
+    document.querySelector('.add-assignment-btn').addEventListener('click', function() {
+        const container = document.getElementById('assignments-container');
+        const newField = document.createElement('div');
+        newField.classList.add('input-group', 'mb-2');
+        newField.innerHTML = `
+            <input type="text" class="form-control" name="assignments[]" placeholder="Assignment Name" required>
+            <button type="button" class="btn btn-outline-danger remove-assignment-btn">Remove</button>
+        `;
+        container.appendChild(newField);
+
+        // Add event listener to remove button
+        newField.querySelector('.remove-assignment-btn').addEventListener('click', function() {
+            container.removeChild(newField);
+        });
+    });
+</script>
+
 </body>
 </html>
