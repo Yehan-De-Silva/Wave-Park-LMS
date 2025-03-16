@@ -45,7 +45,7 @@ $current_page = basename($_SERVER['PHP_SELF'], ".php");
             </li>
             <li class="nav-item">
                 <a class="nav-link  <?php echo $current_page == 'courses' ? 'active' : ''; ?>" href="courses">
-                    <i class="bi bi-book me-2"></i> Assigned Courses
+                    <i class="bi bi-book me-2"></i>Courses
                 </a>
             </li>
             <li class="nav-item">
