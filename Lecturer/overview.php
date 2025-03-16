@@ -33,30 +33,44 @@ include '../db_connection.php';
         <!-- Main Content -->
         <div class="main-content p-4">
             <div class="content-box p-4 ">
-                <h2 class="fw-bold text-primary" >Overview</h2>
-                <!-- Statistics Section -->
-                <div class="row mt-4 p-4">
-                    <div class="col-md-5">
-                        <div class="card stat-card justify-content-center align-items-center">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-book me-2"></i>Total Assigned Courses</h5>
-                                <p class="stat-number">5</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="card stat-card justify-content-center align-items-center">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="bi bi-person-arms-up"></i>Total Students</h5>
-                                <p class="stat-number">12</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+                <center><h2 class="fw-bold text-primary" >View Your Summary</h2></center>
 
-                
+                <!-- Statistics Section -->
+<div class="row mt-4 p-4">
+    <div class="col-md-4 col-sm-12 mb-4">
+        <div class="card stat-card">
+            <div class="icon-number-row">
+                <div class="icon">
+                    <i class="bi bi-book"></i>
+                </div>
+                <div class="stat-number">5</div>
             </div>
+            <div class="title">Total Assigned Courses</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 mb-4">
+        <div class="card stat-card">
+            <div class="icon-number-row">
+                <div class="icon">
+                    <i class="bi bi-person-arms-up"></i>
+                </div>
+                <div class="stat-number">12</div>
+            </div>
+            <div class="title">Total Students</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 mb-4">
+        <div class="card stat-card">
+            <div class="icon-number-row">
+                <div class="icon">
+                    <i class="bi bi-person-arms-up"></i>
+                </div>
+                <div class="stat-number">12</div>
+            </div>
+            <div class="title">Total Students</div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 
