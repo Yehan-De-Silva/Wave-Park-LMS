@@ -34,7 +34,7 @@ $teacher_id = $_SESSION['user_id']; // Assuming teacher_id is stored in session
     <!-- Main Content Area -->
     <div class="main-content p-4">
         <div class="content-box p-4 shadow-sm rounded-4 bg-white">
-            <center><h2 class="fw-bold text-primary mb-5">Add Assignments</h2></center>
+            <center><h2 class="fw-bold text-primary mb-5">View Submitted Assignments</h2></center>
             
            
         </div>
