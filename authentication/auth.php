@@ -29,9 +29,6 @@ if (isset($_POST['register'])) {
         die("Error: " . $e->getMessage());
     }
 }
-<<<<<<< HEAD
-?>
-=======
 
 
 // **User Login Function**
@@ -68,4 +65,3 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
->>>>>>> af39c53763d08efa883b823a7c125640bda6b4ea
