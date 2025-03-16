@@ -6,8 +6,8 @@ include '../db_connection.php';
 
 ?>
 
-<div class="container">
-    <div class="card bg-white gap-5">
+<div class="container" >
+    <div class="card bg-white gap-5" style="width: 30rem; margin: 0 auto; margin-top:5rem; margin-bottom: 5rem; padding: 2rem;">
         <div class="d-flex align-items-center justify-content-center gap-5">
             <div class="toggle-btn active" id="signInToggle">Sign In</div>
             <div class="toggle-btn" id="signUpToggle">Sign Up</div>
