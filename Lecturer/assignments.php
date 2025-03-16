@@ -43,7 +43,7 @@ $stmt = null;
         <div class="content-box p-4 shadow-sm rounded-4 bg-white">
             <center><h2 class="fw-bold text-primary mb-5">Add Assignments</h2></center>
             
-            <div class="add-assignment-form-container">
+            <div class="form-container">
             <form action="" method="POST">
                 <div class="mb-3">
                     <label for="assignment_name" class="form-label">Assignment Name</label>
@@ -66,7 +66,8 @@ $stmt = null;
                     <label for="link" class="form-label">Assignment Link</label>
                     <input type="url" class="form-control" id="link" name="link" placeholder="https://example.com/document" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <br>
+                <center><button type="submit" class="btn btn-primary">Add Assignment</button></center>
             </form>
         </div>
 

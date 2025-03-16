@@ -131,7 +131,7 @@ h1{
     text-align: center;
     transition: transform 0.2s ease-in-out;
     width: 100%; 
-    border: 2px solid #0099ff;
+    
 }
 
 .stat-card:hover {
@@ -145,12 +145,12 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between icon and number */
+    gap: 20px; /* Space between icon and number */
     margin-bottom: 10px;
 }
 
 .stat-card .icon {
-    font-size: 50px;
+    font-size: 40px;
     color: #2d2d2e;
 }
 
@@ -164,7 +164,6 @@ h1{
     font-size: 20px;
     font-weight: 500;
     color: #181818;
-    font-weight: 600;
 }
 
 /* Responsive Design for Stat Cards */
@@ -271,17 +270,33 @@ body {
 
 
 /* Courses */
+.course-card-custom{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .course-card-custom:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s linear, box-shadow 0.3s linear;
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.13);
+    
 }
 
+.course-card-custom{
+    border: 1px solid #b6b6b6;
+}
 /* Assignments */
-.add-assignment-form-container {
+.form-container {
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #ffffff;
     margin: 0 auto;
+    max-width: 600px;
+}
+.form-container label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 10px;
+
 }
