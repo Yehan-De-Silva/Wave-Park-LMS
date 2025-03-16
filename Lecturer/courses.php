@@ -45,8 +45,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php if (count($result) > 0): ?>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <?php foreach ($result as $row): ?>
-                        <div class="col">
-                            <div class="card h-100 course-card-custom" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="col ">
+                            <div class="card h-100 course-card-custom">
                                 <!-- Course Image -->
                                 <img src="<?php echo $row['course_image']; ?>" class="card-img-top" alt="Course Image">
                                 <div class="card-body text-center">
