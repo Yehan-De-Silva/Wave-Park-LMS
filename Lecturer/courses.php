@@ -39,7 +39,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Main Content Area with Rounded Container -->
     <div class="main-content p-4">
+        
         <div class="content-box p-4 shadow-sm rounded-4 bg-white">
+        <div class="courses">
             <center><h1 class="fw-bold mb-5">Assigned Courses</h1></center>
             
             <?php if (count($result) > 0): ?>
@@ -59,6 +61,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php else: ?>
                 <p class="text-center mt-5">No Courses Assigned.</p>
             <?php endif; ?>
+        </div>
         </div>
     </div>
 </div>

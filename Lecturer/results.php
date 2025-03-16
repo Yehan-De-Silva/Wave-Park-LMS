@@ -26,32 +26,36 @@ include '../db_connection.php';
         <?php include 'navigation_panel.php'; ?>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-content p-4">
+     <!-- Main Content Area -->
+     <div class="main-content p-4">
         <div class="content-box p-4 shadow-sm rounded-4 bg-white">
-            <h2 class="fw-bold text-primary">Add Results</h2>
+            <center><h2 class="fw-bold text-primary mb-5">Add Results</h2></center>
+            
+            <div class="form-container">
+            <form action="" method="POST">
+                <div class="mb-3">
+                    <label for="assignment_name" class="form-label">Assignment Name</label>
+                    <input type="text" class="form-control" id="assignment_name" name="assignment_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="course" class="form-label">Course</label>
+                    <select class="form-select" id="course" name="course" required>
+                        <option value="" disabled selected>Select a course</option>
+                        <?php foreach ($courses as $course): ?>
+                            <option value="<?php echo htmlspecialchars($course); ?>"><?php echo htmlspecialchars($course); ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="link" class="form-label">Result Sheet Link</label>
+                    <input type="url" class="form-control" id="link" name="link" placeholder="https://example.com/document" required>
+                </div>
+                <br>
+                <center><button type="submit" class="btn btn-primary">Add Assignment</button></center>
+            </form>
+        </div>
 
-            <table class="table table-hover mt-4">
-                <thead class="table-primary">
-                    <tr>
-                        <th>Course</th>
-                        <th>Assignment</th>
-                        <th>Add</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CS101</td>
-                        <td>Assignment 1</td>
-                        <td><span class="badge bg-success">Add</span></td>
-                    </tr>
-                    <tr>
-                        <td>MT102</td>
-                        <td>Assignment 3</td>
-                        <td><span class="badge bg-success">Add</span></td>
-                    </tr>
-                </tbody>
-            </table>
+
         </div>
     </div>
 </div>
