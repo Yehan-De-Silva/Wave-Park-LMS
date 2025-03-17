@@ -3,10 +3,10 @@
 <div class="hero">
 
     <div class="hero-head">
-        Harmonize Your Learning at Wave Park.
+        <h1>Harmonize Your Learning at Wave Park.</h1>
     </div>
 
-    <div class="hero-content"> 
+    <div class="container hero-content"> 
         <p>Unleash your musical potential with Wave Park's dynamic LMS. <br>Connect, learn, 
             and grow in an immersive online environment tailored <br> for aspiring musicians and educators.
         </p>
@@ -15,8 +15,8 @@
 
 </div>
 
-<div class="px-5">
-    <div class="row my-5">
+<div class="container">
+    <div class="row">
         <div class="col">
             <img src="assets\images\hero-2.jpg" class="hero2-img">
         </div>
