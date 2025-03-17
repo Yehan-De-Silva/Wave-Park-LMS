@@ -7,6 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    
+}
 h4{
     font-size: 14px;
     font-weight: 600;
@@ -14,11 +19,17 @@ h4{
 }
 
 
+
 body {
     background-color: #F3F3F3 !important;
     justify-content: center !important;
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
+
+
+
 
 /* Login CSS */
 .card {
@@ -113,7 +124,8 @@ body {
     font-weight: 100;
     font-size: 22px;
     padding-top: 1%;
-    color: antiquewhite
+    color: antiquewhite;
+    width: 100%;
 }
 
 /* Hero 2 */
