@@ -21,9 +21,9 @@ h4{
 
 
 body {
-    background-color: #F3F3F3 !important;
     justify-content: center !important;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
 
 }
 
@@ -152,9 +152,9 @@ body {
 }
 
 /* Hero Heading */
-.hero-head {
+.hero-head h1{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 65px;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     max-width: 100%;
@@ -162,7 +162,7 @@ body {
 }
 
 /* Hero Content */
-.hero-content {
+.hero-content p{
     font-weight: 100;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -188,11 +188,11 @@ body {
         padding: 0 20px;
     }
 
-    .hero-head {
+    .hero-head h1{
         font-size: 36px;
     }
 
-    .hero-content {
+    .hero-content p{
         font-size: 16px;
         padding: 0 10%;
     }
@@ -213,8 +213,8 @@ body {
         font-size: 24px;
     }
 
-    .hero-content {
-        font-size: 14px;
+    .hero-content p{
+        font-size: 16px;
         padding: 0 5%;
         max-width: 90%;
     }
@@ -242,12 +242,12 @@ body {
         max-width: 100%;
     }
 
-    .hero-content {
-        font-size: 12px;
+    .hero-content p{
+        font-size: 16px;
         padding: 0 5%;
     }
 
-    .hero-content p {
+    .hero-content p{
         margin-bottom: 10px;
     }
 
@@ -296,12 +296,6 @@ body {
         max-width: 400px;
     }
 
-    .btn-group {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
 }
 
 /* ✅ Mobile View (max-width: 768px) */
@@ -336,18 +330,7 @@ body {
         margin-bottom: 15px;
     }
 
-    .btn-group {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 200px;
-        margin: auto;
-        gap: 10px;
-    }
 
-    .btn-group button {
-        width: 100%;
-    }
 }
 
 /* ✅ Extra Small Mobile View (max-width: 480px) */
@@ -371,16 +354,7 @@ body {
         max-width: 280px;
     }
 
-    .btn-group {
-        width: 100%;
-        max-width: 180px;
-    }
-
-    .btn-group button {
-        font-size: 14px;
-        padding: 8px 12px;
-        width: 100%;
-    }
+  
 }
 
 
@@ -399,12 +373,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Hero 4 */
-.hero-4 p{
-    font-size: 20px;
-    font-weight: 500;
-    color: #141414;
-}
 
 /* latest courses */
 
@@ -464,24 +432,24 @@ footer ul li{
 }
 /* Courses */
 .course{
-    background:linear-gradient(to left, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(assets/images/courses.png);
-    height: 550px;
+    background: url(assets/images/courses.png);
+    height: 480px;
     text-align: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.courses-head{
+.courses-head h1{
     font-weight: 600;
     font-size: 55px;
-    padding-top: 150px;
-    color: antiquewhite
+    padding-top: 170px;
+    color: rgb(255, 255, 255)
 }
 /* about */
 .about{
-    background:linear-gradient(to left, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(assets/images/courses.png);
-    height: 550px;
+    background:linear-gradient(to left, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/images/courses.png);
+    height: 450px;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -489,23 +457,30 @@ footer ul li{
 }
 
 .abouthero-head{
-    font-weight: 600;
-    font-size: 45px;
     padding-top: 130px;
     padding-bottom: 20px;
-    color: antiquewhite
+    color: rgb(255, 255, 255)
 }
 
-.about-head{
-    padding-bottom: 10px;
-    font-weight: 600;
-    font-size: 40px;
+.abouthero-head h1{
+    font-weight:700;
+    font-size:65px;
+}
+.abouthero-head p{
+    font-weight:600;
+    font-size:20px;
+}
+@media (max-width: 768px) {
+    .about-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 /* contact Us */
 .contact{
-    background:linear-gradient(to left, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(assets/images/courses.png);
-    height: 550px;
+    background: url(assets/images/courses.png);
+    height: 450px;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -513,12 +488,16 @@ footer ul li{
 }
 
 .contact-head{
-    font-weight: 600;
-    font-size: 55px;
-    padding-top: 190px;
-    color: antiquewhite
+    padding-top: 170px;
+    color: rgb(255, 255, 255)
 }
 
-.head{
-    padding: 12px;
+.contact-head h1{
+    font-weight:700;
+    font-size:65px;
 }
+.contact-head p{
+    font-weight:500;
+    font-size:20px;
+}
+
