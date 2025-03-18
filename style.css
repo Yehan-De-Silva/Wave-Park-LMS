@@ -40,8 +40,8 @@ body {
 
 }
 .toggle-btn.active {
-    color: #0099ff;
-    border-bottom: 2px solid #0099ff;
+    color: #0B1623;
+    border-bottom: 2px solid #0B1623;
     padding-bottom: 5px;
 }
 .form-container {
@@ -51,13 +51,13 @@ body {
     display: block;
 }
 .form-container label{
-    color: #0099ff;
+    color: #0B1623;
 }
 .form-container input{
-    border-color: #0099ff;
+    border-color: #0B1623;
 }
 .btn-custom {
-    background-color: #0099ff !important;
+    background-color: #0B1623 !important;
     color: white !important;
     font-weight: 600 !important;
     font-size: 20px !important;
@@ -80,16 +80,11 @@ body {
     font-weight: bold;
     vertical-align: middle;
     display: table-cell;
-    padding-right: 20px;
+    padding-right: 3rem;
+    padding-top: 1.6rem;
 }
 
-.menu-bar{
-    display: table;
-}
 
-.login-btns {
-    padding-top: 18px;
-}
 
 /* Hero Section */
 .hero{
@@ -162,9 +157,45 @@ body {
     font-weight: 600;
 }
 
+/* Header */
+.header-main{
+    display: flex; 
+    flex-direction: row; 
+    column-gap: 10px; 
+    row-gap: 10px;
+    height: 4.5rem;
+    background-color: #ffffff;
+}
+
+.headerlogo{
+    height: 45px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.loginbtn{
+    background-color: #0B1623;
+    border-radius: 5rem;
+    border: none;
+    width: 6rem;
+    height: 42px;
+    margin-top: 1rem;
+}
+
 /* Footer */
+.footersitemap{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #a7a7a7;
+    padding-bottom: 2px;
+}
+
+.footersitemap:hover{
+    color: #f0f0f0;
+}
+
 .footer-font{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 footer{
@@ -173,7 +204,7 @@ footer{
 }
 
 footer h4 {
-    color: #0099ff;
+    color: #0B1623;
 }
 
 footer ul li{
@@ -182,7 +213,7 @@ footer ul li{
 }
 
 .logo-f{
-    width: 50%;
+    width: 80%;
 }
 
 .col-5{
