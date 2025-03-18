@@ -19,7 +19,7 @@ include 'db_connection.php';
     <div class="row align-self-center align-items-center justify-content-center">
         <?php
         // Fetch the latest 3 courses from the database
-        $query = "SELECT course_name, short_description, course_image, price FROM course ORDER BY date_added ASC LIMIT 4";
+        $query = "SELECT course_id, course_name, short_description, course_image, price FROM course ORDER BY date_added ASC LIMIT 4";
         $stmt = $conn->prepare($query);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -33,7 +33,7 @@ include 'db_connection.php';
                         <div class="card-body">
                             <h5 class="card-title" style="color:#0077cc;"><?php echo htmlspecialchars($row['course_name']); ?></h5>
                             <p class="card-text text-start" style="font-size: 16px; font-weight: 400; padding-top: 10px; padding-bottom: 20px;"><?php echo htmlspecialchars($row['short_description']); ?></p>
-                            <button class="btn btn-custom-1 w-100">Rs. <?php echo htmlspecialchars($row['price']); ?> /=</button>
+                            <a href="course_details.php?id=<?php echo $row['course_id']; ?>" class="btn btn-custom-1 w-100">Rs. <?php echo htmlspecialchars($row['price']); ?> /=</a>
                         </div>
                     </div>
                 </div>

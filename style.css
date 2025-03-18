@@ -55,15 +55,17 @@ body {
     font-weight: 500 !important;
     font-size: 16px !important;
     border-radius: 10px !important;
-    border: 1px solid #0099ff !important;
+    border: 1px solid !important;
+    border-color: #0099ff;
     padding: 10px 20px !important;
 
 }
 
-.btn-custom-2:hover {
+.btn-custom-2:hover{
     background-color: #0077cc !important;
     color: white !important;
-    border-color: #ffffff !important;
+    border: 1px solid white;
+    border-color: white;
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 
@@ -501,3 +503,67 @@ footer ul li{
     font-size:20px;
 }
 
+/* Single course page */
+
+.cImg{
+    width: 500px;
+    height: 450px;
+    
+}
+.cImg2{
+    width: 500px;
+    height: 650px;
+    
+}
+
+.ctbox{
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #00000025;
+}
+.cTitle{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #333333;
+}
+.cTitle2{
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #222222;
+}
+.cTitle3{
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #222222;
+}
+.cPrice{
+    font-size: 26px;
+    font-weight: 700;
+}
+.cPrice span{
+    font-size: 26px;
+    font-weight: 700;
+    color: #0099ff;
+}
+
+.cShDes{
+    font-size: 16px;
+    font-weight: 400;
+    color: #414141;
+
+}
+
+.ctnt{
+    font-size: 24px;
+    font-weight: 500;
+    color: #0077cc;
+    gap: 30px;
+}
+.ctnt li .bi{
+    color: #0099ff;
+    padding-right: 15px;
+}
