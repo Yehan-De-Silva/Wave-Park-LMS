@@ -395,6 +395,39 @@ body {
     font-weight: 600;
 }
 
+/* Header */
+
+.navitem{
+    display: flex;
+    width: 50%;
+    text-align: center;
+    margin-left: 6rem;
+
+}
+
+
+.header-main{
+    display: flex; 
+    flex-direction: row; 
+    column-gap: 10px; 
+    row-gap: 10px;
+    height: 4.5rem;
+    background-color: #ffffff;
+}
+
+.headerlogo{
+    height: 45px;
+    margin-left: 1rem;
+}
+
+.loginbtn{
+    background-color: #0B1623;
+    border-radius: 5rem;
+    border: none;
+    width: 6rem;
+    height: 42px;
+}
+
 /* Footer */
 .footersitemap{
     font-size: 0.9rem;
@@ -429,9 +462,7 @@ footer ul li{
     width: 80%;
 }
 
-.col-5{
-    height: 100%;
-}
+
 /* Courses */
 .course{
     background: url(assets/images/courses.png);
