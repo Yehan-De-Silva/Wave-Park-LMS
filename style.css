@@ -589,10 +589,12 @@ footer ul li{
 }
 
 .ctnt{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     color: #0077cc;
-    gap: 30px;
+}
+.ctnt li{
+    padding-bottom: 20px;
 }
 .ctnt li .bi{
     color: #0099ff;

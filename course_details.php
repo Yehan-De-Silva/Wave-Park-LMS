@@ -81,8 +81,8 @@ if (isset($_GET['id'])) {
     ?>
         </ul>
     <br>
-        <h2 class="cTitle3">No of Assignments : <span style="color: #0077cc; font-weight: 500;"><?php echo htmlspecialchars($course['no_of_assignments']); ?></span></h2>
-        <h2 class="cTitle3">Lecturer : <span style="color: #0077cc; font-weight: 500;"><?php echo htmlspecialchars($course['teacher_id']); ?></span></h2>
+        <h2 class="cTitle3">No of Assignments : <span style="color: #0077cc; font-weight: 400;"><?php echo htmlspecialchars($course['no_of_assignments']); ?></span></h2>
+        <h2 class="cTitle3">Lecturer : <span style="color: #0077cc; font-weight: 400;"><?php echo htmlspecialchars($course['teacher_id']); ?></span></h2>
     
 
 
