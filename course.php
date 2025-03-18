@@ -1,76 +1,50 @@
-<?php include 'header.php'; ?>
+<?php 
+
+include 'header.php'; 
+include 'db_connection.php';
+?>
 
 <div class="course">
-    <div class="courses-head">
-        Our Courses
+    <div class="courses-head" data-aos="fade-up" data-aos-duration="2000">
+        <h1>View Our Courses</h1>
     </div>
 </div>
-<div class="px-5">
-    <div class="row mb-3 mt-5">
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course1.jpg" class="card-img-top" alt="hero2">
-                <div class="card-body">
-                    <h5 class="card-title">Master the Art of Music</h5>
-                    <p class="card-text">Unlock your potential with music courses for all skill levels, covering theory, technique, and creative expression. Guided by industry professionals, our structured curriculum helps beginners and experienced musicians elevate their skills.</p>
-                    <h2>30,000.00 LKR</h2>
+<div class="container hero-4">
+    <center class="mb-3" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="hero4-head"><span style="color: #0077cc;">Explore</span> The Music</h1>
+        <h3>Discover Our Premium Music Courses at Wave Park Academy</h3>
+    </center>
+    <br>
+    <br>
+    <div class="row align-self-center align-items-center justify-content-center">
+        <?php
+        // Fetch the latest 3 courses from the database
+        $query = "SELECT course_name, short_description, course_image, price FROM course ORDER BY date_added ASC LIMIT 4";
+        $stmt = $conn->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if ($result && count($result) > 0) {
+            foreach ($result as $row) {
+                ?>
+                <div class="col-12 w-33 col-sm-6 col-lg-4 col-sm-lg-12 col-sm-w-100">
+                   <div class="card latest-course-card mb-5" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="<?php echo htmlspecialchars($row['course_image']); ?>" class="card-img-top img-fluid" alt="<?php echo htmlspecialchars($row['course_name']); ?>">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#0077cc;"><?php echo htmlspecialchars($row['course_name']); ?></h5>
+                            <p class="card-text text-start" style="font-size: 16px; font-weight: 400; padding-top: 10px; padding-bottom: 20px;"><?php echo htmlspecialchars($row['short_description']); ?></p>
+                            <button class="btn btn-custom-1 w-100">Rs. <?php echo htmlspecialchars($row['price']); ?> /=</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Play, Create, and Perform</h5>
-                    <p class="card-text">Bring your musical dreams to life with tailored courses at Wave Park. Learn your favorite instrument, compose original music, and perform on stage with guidance from experienced instructors in a supportive environment.</p>
-                    <h2>48,000.00 LKR</h2>
-                </div>
-            </div>            
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Your Journey to Musical Mastery Starts Here</h5>
-                    <p class="card-text">Bring your musical dreams to life with tailored courses at Wave Park. Learn your favorite instrument, compose original music, and perform on stage with.</p>
-                    <h2>32,000.00 LKR</h2>
-                </div>
-            </div>            
-        </div>
+                <?php
+            }
+        } else {
+            echo "<p>No courses available at the moment.</p>";
+        }
+        ?>
     </div>
 
-    <div class="row mb-3 mt-3">
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course1.jpg" class="card-img-top" alt="hero2">
-                <div class="card-body">
-                    <h5 class="card-title">Master the Art of Music</h5>
-                    <p class="card-text">Unlock your potential with music courses for all skill levels, covering theory, technique, and creative expression. Guided by industry professionals, our structured curriculum helps beginners and experienced musicians elevate their skills.</p>
-                    <h2>30,000.00 LKR</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Play, Create, and Perform</h5>
-                    <p class="card-text">Bring your musical dreams to life with tailored courses at Wave Park. Learn your favorite instrument, compose original music, and perform on stage with guidance from experienced instructors in a supportive environment.</p>
-                    <h2>48,000.00 LKR</h2>
-                </div>
-            </div>            
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets\images\course3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Your Journey to Musical Mastery Starts Here</h5>
-                    <p class="card-text">Bring your musical dreams to life with tailored courses at Wave Park. Learn your favorite instrument, compose original music, and perform on stage with.</p>
-                    <h2>32,000.00 LKR</h2>
-                </div>
-            </div>            
-        </div>
-    </div>
 </div>
 
 <?php include 'footer.php'; ?>
