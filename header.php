@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../style.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
@@ -33,10 +35,7 @@
                         <a href="about.php" class="menu-link">About</a>
                         <a href="contact.php" class="menu-link">Contact Us</a>
                     </div>
-                    <div class="col-2 login-btns">
-                        <a href="authentication/Login" class="btn btn-primary">Login</a>
-                        <a href="authentication/Login" class="btn btn-primary">Register</a>
-                    </div>
+                  
                 </div>
             </header>
 
