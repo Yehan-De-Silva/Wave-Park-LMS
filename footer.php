@@ -13,7 +13,7 @@
         </div>
 
         <div class="col-2">
-        <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Site Map</h4>
+        <h4 class="fw-bold footersitemap" style="color: #0099ff;">Site Map</h4>
             <a href="index.php" class="fw-normal footersitemap">Home</a><br>
             <a href="course.php" class="fw-normal footersitemap">Course</a><br>
             <a href="about.php" class="fw-normal footersitemap">About Us</a><br>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-3">
-            <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Legal</h4>
+            <h4 class="fw-bold footersitemap" style="color: #0099ff;">Legal</h4>
             <a href="#" class="fw-normal footersitemap">Terms & Conditions</a><br>
             <a href="#" class="fw-normal footersitemap">Privacy Policy</a><br>
             <a href="#" class="fw-normal footersitemap">Cookie Policy</a>
@@ -29,7 +29,7 @@
 
         <div class="col-4">
             <div class="row align-items-start footersitemap">
-                <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Contact</h4>
+                <h4 class="fw-bold footersitemap" style="color: #0099ff;">Contact</h4>
                 <div class="col-md-1">
                     <div class="pb-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
