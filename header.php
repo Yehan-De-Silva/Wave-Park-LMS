@@ -32,68 +32,44 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 navitem">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+                        </button>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="course.php">Course</a>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <a class="nav-link" href="course.php">Course</a>
+                        </button>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <a class="nav-link" href="about.php">About</a>
+                        </button>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact Us</a>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <a class="nav-link" href="contact.php">Contact Us</a>
+                        </button>
                     </li>
                    
                 </ul>
 
-            <form class="d-flex">
-                <button class="loginbtn" style="background-color: #f8f9fa; border:none; margin-right: 1rem;">
-                    <a href="authentication/Login" style="color:#0B1623; text-decoration:none; font-weight: bold;">Login</a>
-                </button>
-                <button class="loginbtn" style="margin-right: 1rem;">
-                    <a href="authentication/Login" style="color:white; text-decoration:none;">Register</a>
-                </button>
-            </form>
+                <form class="d-flex">
+                    <button class="loginbtn" style="background-color: #f8f9fa; border:none; margin-right: 1rem;">
+                        <a href="authentication/Login" style="color:#0B1623; text-decoration:none; font-weight: bold;">Login</a>
+                    </button>
+                    <button class="loginbtn" style="margin-right: 1rem;">
+                        <a href="authentication/Login" style="color:white; text-decoration:none;">Register</a>
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
 
-
-
-    
-
-
-    <!-- <div class="head">
-        <div style="background-color: white;" >
-            <header style="display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
-                <div class="row w-100">
-                    <div class="col-4">
-                        <img class="col-5" src="assets/images/logo.png">
-                    </div>
-                    
-                    <div class="col-5 menu-bar">
-                        <a href="../index.php" class="menu-link">Home</a>
-                        <a href="course.php" class="menu-link">Course</a>
-                        <a href="about.php" class="menu-link">About</a>
-                        <a href="contact.php" class="menu-link">Contact Us</a>
-                    </div>
-                    <div class="col-2 login-btns">
-                        <a href="authentication/Login" class="btn btn-primary">Login</a>
-                        <a href="authentication/Login" class="btn btn-primary">Register</a>
-                    </div>
-                </div>
-            </header>
-        
-        <header style="justify-content: center; align-items: center; align-self: center; display: flex; flex-direction: row; flex-direction: row; column-gap: 10px; row-gap: 10px;">
-        
-        </header>
-
-        </div>
-    </div> -->
-</header>
+</body>
 
 </html>
 
