@@ -1,32 +1,36 @@
-<footer class="py-5">
+<footer class="pt-5 pb-4">
     <div class="row mx-5">
-        <div class="col-4">
-            <div>
+        <div class="col-3">
+            <div style="margin-bottom:27px;">
                 <img class="logo-f" src="assets/images/logo-f.png">
             </div>
-            <!-- <p class="footer-font">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. </p> -->
+
+            <a href="https://www.facebook.com/WaveParkMusicGroup" style="margin-right: 20px; margin-left: 10px;"><i class="bi bi-facebook icon"></i></a>
+            <a href="https://www.instagram.com/WaveParkMusicGroup" style="margin-right: 20px;"><i class="bi bi-instagram icon"></i></a>
+            <a href="https://www.twitter.com/WaveParkMusicGroup" style="margin-right: 20px;"><i class="bi bi-twitter-x icon"></i></a>
+            <a href="https://www.linkedin.com/WaveParkMusicGroup" style="margin-right: 20px;"><i class="bi bi-linkedin icon"></i></a>
+            
         </div>
-        <div class="col">
-        <h4 class="fw-bold">Site Map</h4>
+
+        <div class="col-2">
+        <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Site Map</h4>
             <a href="index.php" class="fw-normal footersitemap">Home</a><br>
             <a href="course.php" class="fw-normal footersitemap">Course</a><br>
             <a href="about.php" class="fw-normal footersitemap">About Us</a><br>
             <a href="contact.php" class="fw-normal footersitemap">Contact Us</a>
         </div>
-        <div class="col">
-            <h4 class="fw-bold">Legal</h4>
+
+        <div class="col-3">
+            <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Legal</h4>
             <a href="#" class="fw-normal footersitemap">Terms & Conditions</a><br>
             <a href="#" class="fw-normal footersitemap">Privacy Policy</a><br>
             <a href="#" class="fw-normal footersitemap">Cookie Policy</a>
         </div>
 
-        <div class="col">
-
-            <div class="row align-items-start">
-                <h4>Contact</h4>
-
-                <div class="col-md-2">
-
+        <div class="col-4">
+            <div class="row align-items-start footersitemap">
+                <h4 class="fw-bold footersitemap" style="color: #a7a7a7;">Contact</h4>
+                <div class="col-md-1">
                     <div class="pb-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
@@ -45,15 +49,14 @@
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                         </svg>
                     </div>
-
                 </div>
 
-                <div class="col-md-10">
+                <div class="col-md-10 footersitemap">
 
                     <div class="pb-2 footersitemap">0112564260</div>
                     <div class="pb-2 footersitemap">info@wavepark.lk</div>
                     <div class="footersitemap">10/A, Mattegoda Road, Mattegoda.</div>
-                
+
                 </div>
             </div>                    
         </div>

@@ -641,10 +641,10 @@ body {
 
 /* Footer */
 .footersitemap{
-    font-size: 0.9rem;
+    font-size: 16px;
     text-decoration: none;
     color: #a7a7a7;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
 }
 
 .footersitemap:hover{
@@ -670,7 +670,12 @@ footer ul li{
 }
 
 .logo-f{
-    width: 80%;
+    width: 10rem;
+}
+
+.icon{
+    font-size: 22px; 
+    color: rgb(165, 165, 165);
 }
 
 
